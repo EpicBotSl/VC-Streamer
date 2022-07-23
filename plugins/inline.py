@@ -23,11 +23,11 @@ from youtubesearchpython import VideosSearch
 
 buttons = [
             [
-                InlineKeyboardButton("Channel", url="https://t.me/Josprojects"),
-                InlineKeyboardButton("Support", url="https://t.me/Jospsupportbot"),
+                InlineKeyboardButton("Channel", url="https://t.me/MaxRobot_updates"),
+                InlineKeyboardButton("Support", url="https://t.me/MaxRobot_updates"),
             ],
             [
-                InlineKeyboardButton("🤖 Make your Own Bot 🤖", url="https://heroku.com/deploy?template=https://github.com/ZauteKm/VideoPlayerBot"),
+                InlineKeyboardButton("🤖 Make your Own Bot 🤖", url="https://heroku.com/deploy?template=https://github.com/maxsupun/VC-Streamer"),
             ]
          ]
 
@@ -38,7 +38,7 @@ async def search(client, query):
         answers.append(
             InlineQueryResultArticle(
                 title="Deploy Own Video Player Bot",
-                input_message_content=InputTextMessageContent(f"{REPLY_MESSAGE}\n\n<b>© Powered By : \ZauteKm | @JosProjects 👑</b>", disable_web_page_preview=True),
+                input_message_content=InputTextMessageContent(f"{REPLY_MESSAGE}\n\n<b>© Powered By : \@Maxsupun1👑</b>", disable_web_page_preview=True),
                 reply_markup=InlineKeyboardMarkup(buttons)
                 )
             )
