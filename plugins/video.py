@@ -96,7 +96,7 @@ async def end_callbacc(client, CallbackQuery):
     await CallbackQuery.message.delete()
 
 
-@Client.on_message(filters.command(["stream", f"stream@{USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(filters.command(["stream", f"stream@{USERNAME}"]) & filters.group)
 @authorized_users_only
 async def stream(client, m: Message):
     msg = await m.reply_text("🔄 `Processing ...`")
@@ -249,7 +249,7 @@ async def stream(client, m: Message):
     )
 
 
-@Client.on_message(filters.command(["pause", f"pause@{USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(filters.command(["pause", f"pause@{USERNAME}"]) & filters.group)
 @authorized_users_only
 async def pause(_, m: Message):
     chat_id = m.chat.id
@@ -266,7 +266,7 @@ async def pause(_, m: Message):
         await m.reply_text("❌ **Noting Is Streaming !**")
 
 
-@Client.on_message(filters.command(["resume", f"resume@{USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(filters.command(["resume", f"resume@{USERNAME}"]) & filters.group)
 @authorized_users_only
 async def resume(_, m: Message):
     chat_id = m.chat.id
@@ -283,7 +283,7 @@ async def resume(_, m: Message):
         await m.reply_text("❌ **Noting Is Streaming !**")
 
 
-@Client.on_message(filters.command(["endstream", f"endstream@{USERNAME}"]) & filters.group & ~filters.edited)
+@Client.on_message(filters.command(["endstream", f"endstream@{USERNAME}"]) & filters.group)
 @authorized_users_only
 async def endstream(client, m: Message):
     msg = await m.reply_text("🔄 `Processing ...`")
