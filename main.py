@@ -30,9 +30,9 @@ if not os.path.isdir("./downloads"):
 
 Bot.start()
 User.start()
-print("\n[INFO] - STARTED VIDEO PLAYER BOT, JOIN @JOSPROJECTS !")
+print("\n[INFO] - STARTED VIDEO PLAYER BOT, JOIN @MaxRobotSupport !")
 
 idle()
 Bot.stop()
 User.stop()
-print("\n[INFO] - STOPPED VIDEO PLAYER BOT, JOIN @JOSPROJECTS !")
+print("\n[INFO] - STOPPED VIDEO PLAYER BOT, JOIN @MaxRobotSupport !")
